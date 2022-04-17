@@ -1,6 +1,6 @@
 package com.company;
 
-public class Square implements Resizeable,Colorable {
+public class Square implements Resizeable {
     private double side;
 
     public Square() {}
@@ -19,10 +19,10 @@ public class Square implements Resizeable,Colorable {
         setSide( side * percent );
     }
 
-    @Override
-    public void howToColor(){
-        System.out.println("Color all four sides.");
-    }
+    // @Override
+    // public void howToColor(){
+    //     System.out.println("Color all four sides.");
+    // }
 
     public double getArea() {
         return side * side;
