@@ -2,8 +2,8 @@ package com.company;
 import java.util.*;
 
 public class Circle implements Resizeable{
-    public double radius;
-    public String color;
+    private double radius;
+    private String color;
 
     public Circle() {
     }
@@ -15,7 +15,7 @@ public class Circle implements Resizeable{
 
     @Override
     public void resize(double percent) {
-
+        radius = radius *  percent ; 
 
     }
 

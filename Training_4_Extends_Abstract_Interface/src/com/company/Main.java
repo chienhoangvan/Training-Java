@@ -4,6 +4,7 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
+
 	// write your code here
     //Test Circle va Cylinder
 //        Circle cr = new Circle(2, "red");
@@ -27,6 +28,29 @@ public class Main {
 //            System.out.println(p3d.getXYZ()[i]);
 //        }
 
+    Scanner sc = new Scanner(System.in);
+    Resizeable[] rs = new Resizeable[3];
+    Circle cl = new Circle();
+    Rectangle rt = new Rectangle();
+    Square sq = new Square();
 
+    //Test circle
+    // System.out.println("Nhap vao do dai ban kinh: ");
+    // cl.setRadius(sc.nextInt());
+    // cl.resize(2);
+    // System.out.println(cl.getArea()); 
+
+    //Test Rectangle
+    System.out.println("Nhap vao chieu dai va chieu rong: ");
+    rt.setLength(sc.nextInt());
+    rt.setWidth(sc.nextInt());
+    rt.resize(sc.nextInt());
+    System.out.println(rt.getArea());
+
+    //Test Square
+    System.out.println("Nhap vao do dai canh hinh vuong: ");
+    sq.setSide(sc.nextInt());
+    sq.resize(sc.nextInt());
+    System.out.println(sq.getArea());
     }
 }
